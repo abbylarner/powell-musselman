@@ -38,34 +38,47 @@ h2 {
     letter-spacing: 2px;
     font-weight: bold;
     position: relative; }
-    .navbar-bg a::before {
-      content: "";
-      position: absolute;
-      width: 50%;
-      height: 2px;
-      bottom: 0;
-      left: 25%;
-      top: 2rem;
-      background-color: #384252;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s; }
-    .navbar-bg a:hover::before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1); }
+    @media (min-width: 992px) {
+      .navbar-bg a::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        bottom: 0;
+        left: 25%;
+        top: 2rem;
+        background-color: #384252;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s; }
+      .navbar-bg a:hover::before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1); } }
 
 .navbar-expand-lg .navbar-collapse {
-  flex: 2;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  margin-top: 0.5rem; }
+  @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+      margin-top: 0; } }
   .navbar-expand-lg .navbar-collapse ul {
     width: 100%;
     justify-content: center; }
   .navbar-expand-lg .navbar-collapse .nav-link {
     padding-left: 1rem;
     padding-right: 1rem; }
+
+.navbar-toggler {
+  display: inline-block;
+  margin: 0.25rem auto 0 auto;
+  border: 1px solid #384252;
+  border-radius: 0; }
+  .navbar-toggler h2 {
+    margin-bottom: 0;
+    margin-top: 2px; }
 
 .bullet {
   color: #384252;

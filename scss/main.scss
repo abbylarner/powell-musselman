@@ -51,7 +51,8 @@ h2 {
 		letter-spacing: 2px;
 		font-weight: bold;
 		position: relative;
-
+        
+        @media (min-width: 992px) {
 		&::before {
 			content: "";
 			  position: absolute;
@@ -68,18 +69,24 @@ h2 {
 			  transition: all 0.3s ease-in-out 0s;
 		}
 
-		&:hover::before {
-			visibility: visible;
-		  -webkit-transform: scaleX(1);
-		  transform: scaleX(1);
+		
+                &:hover::before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
 		}
 	}
 
 }
 
 .navbar-expand-lg .navbar-collapse {
-	flex: 2;
 	flex-flow: row wrap;
+    margin-top: 0.5rem;
+    
+    @media (min-width: 992px){
+        margin-top: 0;
+    }
 	 ul {
 	 	width: 100%;
 	 	justify-content: center;
@@ -90,6 +97,19 @@ h2 {
 	 	padding-right: 1rem;
 	 }
 }
+
+.navbar-toggler {
+    display: inline-block;
+    margin: 0.25rem auto 0 auto;
+    border: 1px solid $font-color;
+    border-radius: 0;
+    
+    h2 {
+        margin-bottom: 0;
+        margin-top: 2px;
+    }
+}
+
 
 .bullet {
 	color: $font-color;
