@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Scheherazade");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
+body {
+  font-family: 'Scheherazade', serif; }
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+h1 {
+  font-family: 'Great Vibes', sans-serif;
+  color: #384252; }
+
+h2 {
+  font-family: 'Scheherazade', serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #384252; }
+
+.navbar-expand-md .navbar-nav {
+  width: 100%;
+  justify-content: center; }
+  .navbar-expand-md .navbar-nav li {
+    display: inline-block; }
+
+.navbar-bg {
+  background-color: #ffb9a0;
+  opacity: .9;
+  padding: 1.25rem 1.25rem 0.75rem 1.25rem;
+  text-align: center;
+  flex-flow: row wrap; }
+  .navbar-bg a {
+    color: #384252;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative; }
+    .navbar-bg a::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 2px;
+      bottom: 0;
+      left: 25%;
+      top: 2rem;
+      background-color: #384252;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s; }
+    .navbar-bg a:hover::before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+
+.navbar-expand-lg .navbar-collapse {
+  flex: 2;
+  flex-flow: row wrap; }
+  .navbar-expand-lg .navbar-collapse ul {
+    width: 100%;
+    justify-content: center; }
+  .navbar-expand-lg .navbar-collapse .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+.bullet {
+  color: #384252;
+  font-size: 10px;
+  letter-spacing: 2px;
+  display: none;
+  margin-top: 8px;
+  font-size: 15px; }
+  @media (min-width: 992px) {
+    .bullet {
+      display: inline-block; } }
+
+@media (min-width: 992px) {
+  .bullet-internal {
+    display: none; } }
+
+.logo {
+  align-self: stretch;
+  flex: 1 100%; }
+
+.hero-container {
+  text-align: center;
+  background: url("../images/hero4.jpg") 0 0 no-repeat;
+  background-size: cover;
+  height: 30rem;
+  margin-top: 7.6rem; }
+  @media (min-width: 992px) {
+    .hero-container {
+      height: 50rem; } }
+
+.about {
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
