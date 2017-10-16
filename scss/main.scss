@@ -2,100 +2,94 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
-
-
 //Colors
 $font-color: #384252;
-
+$primary-color: #ffb9a0;
+$secondary-color: #d1f1f2;
+$light-color: #fff8f6;
 body {
-	font-family: 'Scheherazade', serif;
+    font-family: 'Scheherazade', serif;
+    background: $light-color;
 }
 
 section {
-	padding-top: 4rem;
-	padding-bottom: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 h1 {
-	font-family: 'Great Vibes', sans-serif;
-	color: $font-color;
+    font-family: 'Great Vibes', sans-serif;
+    color: $font-color;
 }
 
 h2 {
-	font-family: 'Scheherazade', serif;
-	text-transform: uppercase;
-	font-size: 20px;
-	color: $font-color;
+    font-family: 'Scheherazade', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: $font-color;
+    letter-spacing: 2px;
 }
 
 .navbar-expand-md .navbar-nav {
-	width: 100%;
-	justify-content: center;
-
-	li {
-		display: inline-block;
-	}
+    width: 100%;
+    justify-content: center;
+    li {
+        display: inline-block;
+    }
 }
+
 .navbar-bg {
-	background-color: #ffb9a0;
-	opacity: .9;
-	padding: 1.25rem 1.25rem 0.75rem 1.25rem;
-	text-align: center;
-	flex-flow: row wrap;
-
-
-	a {
-		color: $font-color;
-		text-transform: uppercase;
-		font-size: 15px;
-		letter-spacing: 2px;
-		font-weight: bold;
-		position: relative;
-        
+    background-color: $primary-color;
+    opacity: .9;
+    padding: 1.25rem 1.25rem 0.75rem 1.25rem;
+    text-align: center;
+    flex-flow: row wrap;
+    a {
+        color: $font-color;
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        position: relative;
         @media (min-width: 992px) {
-		&::before {
-			content: "";
-			  position: absolute;
-			  width: 50%;
-			  height: 2px;
-			  bottom: 0;
-			  left: 25%;
-			  top: 2rem;
-			  background-color: $font-color;
-			  visibility: hidden;
-			  -webkit-transform: scaleX(0);
-			  transform: scaleX(0);
-			  -webkit-transition: all 0.3s ease-in-out 0s;
-			  transition: all 0.3s ease-in-out 0s;
-		}
-
-		
-                &:hover::before {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 50%;
+                height: 2px;
+                bottom: 0;
+                left: 25%;
+                top: 2rem;
+                background-color: $font-color;
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+            }
+            &:hover::before {
                 visibility: visible;
                 -webkit-transform: scaleX(1);
                 transform: scaleX(1);
             }
-		}
-	}
-
+        }
+    }
 }
 
 .navbar-expand-lg .navbar-collapse {
-	flex-flow: row wrap;
+    flex-flow: row wrap;
     margin-top: 0.5rem;
-    
-    @media (min-width: 992px){
+    @media (min-width: 992px) {
         margin-top: 0;
     }
-	 ul {
-	 	width: 100%;
-	 	justify-content: center;
-	 }
-
-	 .nav-link {
-	 	padding-left: 1rem;
-	 	padding-right: 1rem;
-	 }
+    ul {
+        width: 100%;
+        justify-content: center;
+    }
+    .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 .navbar-toggler {
@@ -103,51 +97,124 @@ h2 {
     margin: 0.25rem auto 0 auto;
     border: 1px solid $font-color;
     border-radius: 0;
-    
     h2 {
         margin-bottom: 0;
         margin-top: 2px;
     }
 }
 
-
 .bullet {
-	color: $font-color;
-	font-size: 10px;
-	letter-spacing: 2px;
-	display: none;
-	margin-top: 8px;
-	font-size: 15px;
-	@media (min-width: 992px){
-		display: inline-block;
-	}
+    color: $font-color;
+    font-size: 10px;
+    letter-spacing: 2px;
+    display: none;
+    margin-top: 8px;
+    font-size: 15px;
+    @media (min-width: 992px) {
+        display: inline-block;
+    }
 }
 
 .bullet-internal {
-	@media (min-width: 992px) {
-		display: none;
-	}
+    @media (min-width: 992px) {
+        display: none;
+    }
 }
 
 .logo {
-	align-self:stretch;
-	flex: 1 100%;
+    align-self: stretch;
+    flex: 1 100%;
 }
 
 .hero-container {
-  text-align: center;
-  background: url('../images/hero4.jpg') 0 0 no-repeat;
-  background-size: cover;
-  height: 30rem;
-  margin-top: 7.6rem;
-  
-	@media (min-width: 992px){
-		  height: 50rem;
-	}
-
+    text-align: center;
+    background: url('../images/hero4.jpg') 0 0 no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 30rem;
+    margin-top: 7.6rem;
+    @media (min-width: 992px) {
+        height: 40rem;
+    }
 }
 
 .about {
-	text-align: center;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
 }
 
+.story {
+    background: url('../images/background.png');
+}
+
+.separator {
+    width: 18rem;
+}
+
+.corner {
+    width: 25%;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.text-position {
+        width: 40%;
+        h1,
+        h2 {
+            color: $light-color;
+        }
+    }
+
+.story {
+    background: $font-color;
+}
+
+//.nav-tabs {
+//    border-bottom: 0;
+//    .nav-item {
+//        width: 25%;
+//        text-align: center;
+//        &:last-child {
+//            a{
+//                border-right: 1px solid darken($font-color, 5%);
+//            } 
+//        }
+//    }
+//    a.nav-link {
+//        padding: 1.1rem 1rem 0.9rem 1rem ;
+//        background: $font-color;
+//        border-radius: 0;
+//        text-transform: uppercase;
+//        color: $light-color;
+//        border-color: darken($font-color, 5%);
+//        letter-spacing: 2px;
+//        border-right: 0;
+//    
+//
+//
+//        &.active {
+//            border-radius: 0;
+//            font-size: 15px;
+//            border-color: darken($font-color, 5%);
+//            line-height: 1.6;
+//            background: darken($font-color, 5%);
+//            color: $light-color;
+//        }
+//        
+//        &.active:hover {
+//            border-color: darken($font-color, 5%);
+//        }
+//        
+//        &:hover {
+//            border-color: darken($font-color, 5%);
+//        }
+//    }
+//}
