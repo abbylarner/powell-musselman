@@ -21,6 +21,19 @@ h2 {
   color: #384252;
   letter-spacing: 2px; }
 
+h3 {
+  color: #384252;
+  opacity: 0.5;
+  font-style: italic;
+  font-size: 16px;
+  font-family: 'Scheherazade', serif;
+  padding: 1rem 0;
+  text-align: center; }
+
+p {
+  color: #384252;
+  font-size: 18px; }
+
 .navbar-expand-md .navbar-nav {
   width: 100%;
   justify-content: center; }
@@ -137,12 +150,59 @@ h2 {
   justify-content: center; }
 
 .text-position {
-  width: 40%; }
+  text-align: center; }
   .text-position h1,
   .text-position h2 {
     color: #fff8f6; }
 
+.story-container {
+  padding: 0;
+  display: flex; }
+  .story-container .solid, .story-container .photo {
+    box-sizing: border-box;
+    min-height: 26rem; }
+  .story-container .solid {
+    background-color: #384252;
+    padding: 2rem; }
+    .story-container .solid h2 {
+      text-align: center; }
+    .story-container .solid h2, .story-container .solid p {
+      color: #fff8f6; }
+    .story-container .solid p {
+      opacity: 0.6;
+      margin-top: 2rem; }
+  .story-container .photo {
+    background: url("../images/memories/pose2.jpg") 0 0 no-repeat;
+    height: 100%;
+    background-size: cover;
+    background-position: 0 30%; }
+  .story-container section {
+    flex: 3;
+    flex-flow: wrap; }
+
 .story {
-  background: #384252; }
+  background: #384252 url("../images/sparkles.png") 0 0 repeat;
+  background-size: 20rem; }
+
+.story-background {
+  background: #fff8f6;
+  padding: 1.5rem;
+  margin-top: 4rem;
+  opacity: 0.75; }
+  .story-background h2 {
+    text-align: center;
+    margin-bottom: 1rem; }
+  .story-background p:last-child {
+    margin-bottom: 0; }
+
+.story-title h3 {
+  padding-top: 0;
+  margin-bottom: 0; }
+
+.story-image {
+  background: url("../images/memories/pose2.jpg") 0 0 no-repeat;
+  background-size: cover;
+  height: 90%;
+  background-position: 0 35%; }
 
 /*# sourceMappingURL=main.css.map */

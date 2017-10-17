@@ -7,6 +7,7 @@ $font-color: #384252;
 $primary-color: #ffb9a0;
 $secondary-color: #d1f1f2;
 $light-color: #fff8f6;
+$medium-color: #ccaf66;
 body {
     font-family: 'Scheherazade', serif;
     background: $light-color;
@@ -28,6 +29,20 @@ h2 {
     font-size: 20px;
     color: $font-color;
     letter-spacing: 2px;
+}
+h3 {
+    color: $font-color;
+    opacity: 0.5;
+    font-style: italic;
+    font-size: 16px;
+    font-family: 'Scheherazade', serif;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+p {
+    color: $font-color;
+    font-size: 18px;
 }
 
 .navbar-expand-md .navbar-nav {
@@ -166,15 +181,92 @@ h2 {
     
 }
 .text-position {
-        width: 40%;
-        h1,
+    text-align: center;
+    h1,
+    h2 {
+        color: $light-color;
+    }
+}
+
+.story-container {
+    padding: 0;
+    display: flex;
+    .solid, .photo {
+        box-sizing: border-box;
+        min-height: 26rem;
+        
+    }
+    .solid {
+            background-color: $font-color;
+            padding: 2rem;
         h2 {
+            text-align: center;
+        }
+        h2, p {
             color: $light-color;
         }
+        p {
+            opacity: 0.6;
+            margin-top: 2rem;
+        }
     }
+    
+.photo {
+        background: url('../images/memories/pose2.jpg') 0 0 no-repeat;
+    height: 100%;
+    background-size: cover;
+    background-position: 0 30%;
+}
+    
+    section {
+       flex: 3;
+        flex-flow: wrap;
+    }
+    
+}
+
+
+
+
+
+
+
 
 .story {
-    background: $font-color;
+    background: $font-color url('../images/sparkles.png') 0 0 repeat;
+    background-size: 20rem;
+}
+
+.story-background {
+    background: $light-color;
+//    border: 5px solid $font-color; 
+//    outline: 2px dashed $medium-color;
+    padding: 1.5rem;
+    margin-top: 4rem;
+    opacity: 0.75;
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.story-title {
+    h3 {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.story-image {
+    background: url('../images/memories/pose2.jpg') 0 0 no-repeat;
+    background-size: cover;
+    height: 90%;
+    background-position: 0 35%;
 }
 
 //.nav-tabs {
