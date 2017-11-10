@@ -30,6 +30,7 @@ h2 {
     color: $font-color;
     letter-spacing: 2px;
 }
+
 h3 {
     color: $font-color;
     opacity: 0.5;
@@ -42,7 +43,8 @@ h3 {
 
 p {
     color: $font-color;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.8;
 }
 
 .navbar-expand-md .navbar-nav {
@@ -141,16 +143,24 @@ p {
     flex: 1 100%;
 }
 
+section {
+    background-color: $light-color;
+}
+
 .hero-container {
     text-align: center;
-    background: url('../images/hero4.jpg') 0 0 no-repeat;
+    background: url('../images/hero_books.jpg') 0 0 no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: 20%;
     height: 30rem;
     margin-top: 7.6rem;
     @media (min-width: 992px) {
         height: 40rem;
     }
+}
+
+.date {
+    background: $light-color;
 }
 
 .about {
@@ -159,18 +169,54 @@ p {
     margin: 0 auto;
 }
 
-.story {
-    background: url('../images/background.png');
+.our-story {
+    background: $font-color;
+    padding: 0;
+    p {
+        margin-top: 2rem;
+    }
+    p,
+    h2 {
+        color: $light-color;
+    }
+
+    .story-text {
+        max-width: 30rem;
+        margin: 0 auto;
+        padding: 6rem 0;
+    }
+    .photo {
+        background: url('../images/vertical1.jpg') 0 0 no-repeat;
+        background-size: cover;
+    }
+    .photo2 {
+        background: url('../images/vertical2.jpg') 0 0 no-repeat;
+        background-size: cover;
+    }
+}
+
+.fixed-photo {
+     background: url('../images/ring.jpg') 0 0 no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-attachment: fixed;
 }
 
 .separator {
     width: 18rem;
 }
 
+
+
+
+
+
 .corner {
     width: 25%;
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Chrome, Safari, Opera */
     transform: rotate(90deg);
 }
 
@@ -178,8 +224,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
+
 .text-position {
     text-align: center;
     h1,
@@ -188,68 +234,21 @@ p {
     }
 }
 
-.story-container {
-    padding: 0;
-    display: flex;
-    .solid, .photo {
-        box-sizing: border-box;
-        min-height: 26rem;
-        
-    }
-    .solid {
-            background-color: $font-color;
-            padding: 2rem;
-        h2 {
-            text-align: center;
-        }
-        h2, p {
-            color: $light-color;
-        }
-        p {
-            opacity: 0.6;
-            margin-top: 2rem;
-        }
-    }
-    
-.photo {
-        background: url('../images/memories/pose2.jpg') 0 0 no-repeat;
-    height: 100%;
-    background-size: cover;
-    background-position: 0 30%;
-}
-    
-    section {
-       flex: 3;
-        flex-flow: wrap;
-    }
-    
-}
 
 
 
-
-
-
-
-
-.story {
-    background: $font-color url('../images/sparkles.png') 0 0 repeat;
-    background-size: 20rem;
-}
 
 .story-background {
     background: $light-color;
-//    border: 5px solid $font-color; 
-//    outline: 2px dashed $medium-color;
+    //    border: 5px solid $font-color; 
+    //    outline: 2px dashed $medium-color;
     padding: 1.5rem;
     margin-top: 4rem;
     opacity: 0.75;
-    
     h2 {
         text-align: center;
         margin-bottom: 1rem;
     }
-    
     p:last-child {
         margin-bottom: 0;
     }
