@@ -130,31 +130,100 @@ section {
       height: 40rem; } }
 
 .date {
-  background: #fff8f6; }
+  background: #fff8f6;
+  padding: 14rem 0; }
 
 .about {
   text-align: center;
-  width: 40%;
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    .about {
+      width: 40%; } }
 
 .our-story {
-  background: #384252;
   padding: 0; }
   .our-story p {
     margin-top: 2rem; }
   .our-story p,
   .our-story h2 {
-    color: #fff8f6; }
+    color: #384252; }
+  .our-story h1 {
+    padding-left: 2rem; }
+  .our-story .story-start-container {
+    position: relative;
+    margin-top: 4rem; }
+    .our-story .story-start-container::before {
+      background: url("../images/cheers.png") 0 0 no-repeat;
+      background-size: 200px;
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      content: "";
+      z-index: -1;
+      margin-left: 60%; }
+  .our-story .story-proposal-container {
+    position: relative;
+    margin-top: 2rem; }
+    .our-story .story-proposal-container::before {
+      background: url("../images/ring.png") 0 0 no-repeat;
+      background-size: 150px;
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      content: "";
+      z-index: -1;
+      margin-left: 35%;
+      margin-top: -12rem; }
+    .our-story .story-proposal-container h1 {
+      text-align: center;
+      padding-left: 0;
+      margin-top: 0; }
+  .our-story .large-story-img {
+    padding: 1rem; }
+  .our-story .story-title {
+    margin-top: -10rem; }
+  .our-story .story-title-bg {
+    position: absolute;
+    width: 10rem;
+    top: -2rem;
+    z-index: 1; }
+  .our-story .story-img {
+    width: 100%; }
+  .our-story .top-margin {
+    margin-top: 3rem; }
   .our-story .story-text {
     max-width: 30rem;
-    margin: 0 auto;
-    padding: 6rem 0; }
+    margin: 0 auto; }
   .our-story .photo {
     background: url("../images/vertical1.jpg") 0 0 no-repeat;
     background-size: cover; }
   .our-story .photo2 {
     background: url("../images/vertical2.jpg") 0 0 no-repeat;
     background-size: cover; }
+  .our-story .spacer {
+    margin-bottom: 5rem; }
+
+.invitation-text {
+  text-align: center;
+  background: #384252 url("../images/corner.png");
+  background-attachment: fixed;
+  background-size: 350px;
+  padding: 10rem 0 8rem 0; }
+  .invitation-text h1 {
+    color: #fff8f6;
+    line-height: 1.6; }
+  .invitation-text a {
+    font-family: 'Scheherazade', serif;
+    font-size: 22px;
+    color: #fff8f6;
+    border: 1px solid #fff8f6;
+    padding: 1rem 2rem 0.75rem 2rem;
+    width: 30%;
+    display: inline-block;
+    margin-top: 20px; }
+    .invitation-text a:hover, .invitation-text a:focus, .invitation-text a:active {
+      text-decoration: none;
+      background-color: rgba(255, 248, 246, 0.25); }
 
 .fixed-photo {
   background: url("../images/ring.jpg") 0 0 no-repeat;
@@ -204,5 +273,10 @@ section {
   background-size: cover;
   height: 90%;
   background-position: 0 35%; }
+
+.flourish {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2rem; }
 
 /*# sourceMappingURL=main.css.map */

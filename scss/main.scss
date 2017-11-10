@@ -161,29 +161,86 @@ section {
 
 .date {
     background: $light-color;
+    padding: 14rem 0;
 }
 
 .about {
     text-align: center;
-    width: 40%;
     margin: 0 auto;
+
+    @media (min-width: 768px){
+            width: 40%;
+    }
 }
 
 .our-story {
-    background: $font-color;
     padding: 0;
     p {
         margin-top: 2rem;
     }
     p,
     h2 {
-        color: $light-color;
+        color: $font-color;
+    }
+    h1 {
+        padding-left: 2rem;
+    }
+    .story-start-container {
+        position: relative;
+        margin-top: 4rem;
+        &::before {
+            background: url('../images/cheers.png') 0 0 no-repeat;
+            background-size: 200px;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            content: "";
+            z-index: -1;
+            margin-left: 60%;
+        }
+    }
+    .story-proposal-container {
+        position: relative;
+        margin-top: 2rem;
+        &::before {
+            background: url('../images/ring.png') 0 0 no-repeat;
+            background-size: 150px;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            content: "";
+            z-index: -1;
+            margin-left: 35%;
+            margin-top: -12rem;
+        }
+        h1 {
+            text-align: center;
+            padding-left: 0;
+            margin-top: 0;
+        }
     }
 
+    .large-story-img {
+        padding: 1rem;
+    }
+    .story-title {
+        margin-top: -10rem;
+    }
+    .story-title-bg {
+        position: absolute;
+        width: 10rem;
+        top: -2rem;
+        z-index: 1;
+    }
+    .story-img {
+        width: 100%;
+    }
+    .top-margin {
+        margin-top: 3rem;
+    }
     .story-text {
         max-width: 30rem;
         margin: 0 auto;
-        padding: 6rem 0;
     }
     .photo {
         background: url('../images/vertical1.jpg') 0 0 no-repeat;
@@ -193,10 +250,42 @@ section {
         background: url('../images/vertical2.jpg') 0 0 no-repeat;
         background-size: cover;
     }
+
+    .spacer {
+        margin-bottom: 5rem;
+    }
+}
+
+.invitation-text {
+    text-align: center;
+    background: $font-color url('../images/corner.png');
+    background-attachment: fixed;
+    background-size: 350px;
+    padding: 10rem 0 8rem 0;
+    h1 {
+        color: $light-color;
+        line-height: 1.6;
+    }
+
+    a {
+        font-family: 'Scheherazade', serif;
+        font-size: 22px;
+        color: $light-color;
+        border: 1px solid $light-color;
+        padding: 1rem 2rem 0.75rem 2rem;
+        width: 30%;
+        display: inline-block; 
+        margin-top: 20px;
+
+        &:hover, &:focus, &:active {
+            text-decoration: none;
+            background-color: rgba(255,248,246, 0.25);
+        }
+    }
 }
 
 .fixed-photo {
-     background: url('../images/ring.jpg') 0 0 no-repeat;
+    background: url('../images/ring.jpg') 0 0 no-repeat;
     background-size: cover;
     height: 600px;
     background-attachment: fixed;
@@ -205,11 +294,6 @@ section {
 .separator {
     width: 18rem;
 }
-
-
-
-
-
 
 .corner {
     width: 25%;
@@ -234,13 +318,8 @@ section {
     }
 }
 
-
-
-
-
 .story-background {
-    background: $light-color;
-    //    border: 5px solid $font-color; 
+    background: $light-color; //    border: 5px solid $font-color;
     //    outline: 2px dashed $medium-color;
     padding: 1.5rem;
     margin-top: 4rem;
@@ -268,44 +347,8 @@ section {
     background-position: 0 35%;
 }
 
-//.nav-tabs {
-//    border-bottom: 0;
-//    .nav-item {
-//        width: 25%;
-//        text-align: center;
-//        &:last-child {
-//            a{
-//                border-right: 1px solid darken($font-color, 5%);
-//            } 
-//        }
-//    }
-//    a.nav-link {
-//        padding: 1.1rem 1rem 0.9rem 1rem ;
-//        background: $font-color;
-//        border-radius: 0;
-//        text-transform: uppercase;
-//        color: $light-color;
-//        border-color: darken($font-color, 5%);
-//        letter-spacing: 2px;
-//        border-right: 0;
-//    
-//
-//
-//        &.active {
-//            border-radius: 0;
-//            font-size: 15px;
-//            border-color: darken($font-color, 5%);
-//            line-height: 1.6;
-//            background: darken($font-color, 5%);
-//            color: $light-color;
-//        }
-//        
-//        &.active:hover {
-//            border-color: darken($font-color, 5%);
-//        }
-//        
-//        &:hover {
-//            border-color: darken($font-color, 5%);
-//        }
-//    }
-//}
+.flourish {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
