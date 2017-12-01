@@ -279,4 +279,89 @@ section {
   margin: 0 auto;
   margin-bottom: 2rem; }
 
+.top-section {
+  margin-top: 7.5rem; }
+
+.full-bleed {
+  padding: 0;
+  margin: 0; }
+
+.map {
+  width: 80%;
+  margin: 0 10%;
+  height: 300px; }
+  @media (min-width: 768px) {
+    .map {
+      width: 100%;
+      margin: 0;
+      height: 400px; } }
+
+.schedule-container {
+  padding-bottom: 3rem; }
+  .schedule-container:nth-child(4) {
+    background: #384252 url("../images/corner.png");
+    background-size: 350px; }
+    .schedule-container:nth-child(4) .schedule-item h1,
+    .schedule-container:nth-child(4) .schedule-item h2,
+    .schedule-container:nth-child(4) .schedule-item p {
+      color: #fff8f6; }
+    .schedule-container:nth-child(4) .schedule-item img {
+      width: 3rem;
+      display: inline-block;
+      transform: rotate(30deg); }
+      .schedule-container:nth-child(4) .schedule-item img.reflect {
+        transform: rotate(-30deg); }
+
+.schedule-item {
+  text-align: center; }
+  .schedule-item h1 {
+    display: inline-block;
+    margin: 0 0.75rem; }
+  .schedule-item img {
+    width: 3rem;
+    display: inline-block;
+    margin-top: -1.25rem;
+    transform: rotate(10deg); }
+    .schedule-item img.reflect {
+      transform: rotate(170deg);
+      margin-top: -1rem; }
+  .schedule-item .more-details {
+    margin: 2rem auto 0 auto;
+    clear: both;
+    width: 60%; }
+    .schedule-item .more-details p {
+      line-height: 1.1; }
+  .schedule-item .event-info-container {
+    width: 60%;
+    margin: 2rem auto 0 auto;
+    overflow: hidden; }
+  .schedule-item .event-address {
+    width: 60%;
+    margin: 0 auto 2rem auto; }
+    .schedule-item .event-address p {
+      margin-bottom: 0;
+      line-height: 1.1; }
+  .schedule-item .event-info-wrapper {
+    width: 60%;
+    margin: 0 auto; }
+  .schedule-item .time {
+    text-align: left;
+    float: left;
+    vertical-align: top;
+    width: 40%;
+    clear: both; }
+    .schedule-item .time p {
+      line-height: 1.1;
+      font-weight: bold; }
+    .schedule-item .time.single-time {
+      width: 100%;
+      text-align: center; }
+  .schedule-item .event-info {
+    text-align: left;
+    float: left;
+    width: 60%; }
+    .schedule-item .event-info p {
+      margin-bottom: 0;
+      line-height: 1.1; }
+
 /*# sourceMappingURL=main.css.map */
