@@ -343,41 +343,65 @@ section {
   margin-bottom: 2rem; }
 
 #dinner {
-  width: 100%;
-  height: 400px;
+  width: 80%;
+  height: 300px;
+  margin: 0 10%;
   background: url("../images/dinner_map.png") 0 0 no-repeat;
-  background-size: cover;
-  background-position: -10rem 0; }
+  background-size: cover; }
+  @media (min-width: 768px) {
+    #dinner {
+      background-position: -10rem 0;
+      width: 100%;
+      height: 400px;
+      margin: 0; } }
   @media (min-width: 992px) {
     #dinner {
       background-position: 0 0; } }
 
 #ceremony {
-  width: 100%;
-  height: 400px;
+  width: 80%;
+  height: 300px;
+  margin: 0 10%;
   background: url("../images/ceremony_map.png") 0 0 no-repeat;
-  background-size: cover;
-  background-position: -10rem 0; }
+  background-size: cover; }
+  @media (min-width: 768px) {
+    #ceremony {
+      background-position: -10rem 0;
+      width: 100%;
+      height: 400px;
+      margin: 0; } }
   @media (min-width: 992px) {
     #ceremony {
       background-position: 0 0; } }
 
 #drinks {
-  width: 100%;
-  height: 400px;
+  width: 80%;
+  height: 300px;
+  margin: 0 10%;
   background: url("../images/drinks_map.png") 0 0 no-repeat;
-  background-size: cover;
-  background-position: -10rem 0; }
+  background-size: cover; }
+  @media (min-width: 768px) {
+    #drinks {
+      background-position: -10rem 0;
+      width: 100%;
+      height: 400px;
+      margin: 0; } }
   @media (min-width: 992px) {
     #drinks {
       background-position: 0 0; } }
 
 #brunch {
-  width: 100%;
-  height: 400px;
+  width: 80%;
+  height: 300px;
+  margin: 0 10%;
   background: url("../images/brunch_map.png") 0 0 no-repeat;
-  background-size: cover;
-  background-position: -10rem 0; }
+  background-size: cover; }
+  @media (min-width: 768px) {
+    #brunch {
+      background-position: -10rem 0;
+      width: 100%;
+      height: 400px;
+      margin: 0; } }
   @media (min-width: 992px) {
     #brunch {
       background-position: 0 0; } }
