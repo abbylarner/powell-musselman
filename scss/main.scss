@@ -21,6 +21,11 @@ section {
 h1 {
     font-family: 'Great Vibes', sans-serif;
     color: $font-color;
+    font-size: 2.2rem;
+
+    @media (min-width: 992px){
+        font-size: 2.5rem;
+    }
 }
 
 h2 {
@@ -431,6 +436,50 @@ section {
 }
 
 //Schedule
+#dinner {
+    width: 100%;
+    height: 400px;
+    background: url('../images/dinner_map.png') 0 0 no-repeat;
+    background-size: cover;
+    background-position: -10rem 0;
+
+    @media (min-width: 992px){
+       background-position: 0 0; 
+    }
+}
+#ceremony {
+    width: 100%;
+    height: 400px;
+    background: url('../images/ceremony_map.png') 0 0 no-repeat;
+    background-size: cover;
+    background-position: -10rem 0;
+
+    @media (min-width: 992px){
+       background-position: 0 0; 
+    }
+}
+#drinks {
+    width: 100%;
+    height: 400px;
+    background: url('../images/drinks_map.png') 0 0 no-repeat;
+    background-size: cover;
+    background-position: -10rem 0;
+
+    @media (min-width: 992px){
+       background-position: 0 0; 
+    }
+}
+#brunch {
+    width: 100%;
+    height: 400px;
+    background: url('../images/brunch_map.png') 0 0 no-repeat;
+    background-size: cover;
+    background-position: -10rem 0;
+
+    @media (min-width: 992px){
+       background-position: 0 0; 
+    }
+}
 .top-section {
     margin-top: 7.5rem;
 }
@@ -594,6 +643,8 @@ section {
 }
 
 //Accomodations
+
+
 .acc-container {
     text-align: center;
     .story-title {

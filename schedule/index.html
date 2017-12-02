@@ -37,7 +37,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../accomodations/index.html"><span class="bullet-internal">&bull; </span>Accomodations <span class="bullet-internal">&bull;</span></a>
                 </li>
-<!--                 <span class="bullet">&bull;</span>
+                <!--                 <span class="bullet">&bull;</span>
                 <li class="nav-item active">
                     <a class="nav-link" href="#"><span class="bullet-internal">&bull; </span>Registry <span class="bullet-internal">&bull;</span></a>
                 </li>
@@ -71,9 +71,7 @@
                     <div class="schedule-item">
                         <h2>Wedding Party Rehearsal Dinner</h2>
                         <div class="event-date">
-                            <img src="images/flourish2.svg" class="separator reflect" />
                             <h1>Friday, August 31st</h1>
-                            <img src="images/flourish2.svg" class="separator " />
                         </div>
                         <div class="event-info-container">
                             <div class="event-address">
@@ -100,13 +98,15 @@
                             <p>
                                 Shades of Summer Party: Wear your favorite summer colors and meet us on the beach!
                             </p>
-                            <p>Wedding Party and Family only. <br /> Uber Recommended.</p>
+                            <p>Wedding Party and Family only.
+                                <br /> Uber Recommended.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-5 col-lg-6">
-                    <iframe src="https://snazzymaps.com/build-a-map/preview/embed/30384" width="100%" height="600px" class="map" style="border:none;">
-    </iframe>
+                    <div id="dinner"></div>
+                    <div id="dinner-map">
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,9 +118,7 @@
                     <div class="schedule-item">
                         <h2>Welcome Drinks</h2>
                         <div class="event-date">
-                            <img src="images/flourish2.svg" class="separator reflect" />
                             <h1>Friday, August 31st</h1>
-                            <img src="images/flourish2.svg" class="separator " />
                         </div>
                         <div class="event-info-container">
                             <div class="event-address">
@@ -134,15 +132,16 @@
                                 </div>
                             </div>
                             <div class="more-details">
-                            <p>
-                                Everyone's Invited!</p>
-                        </div>
+                                <p>
+                                    Everyone's Invited!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-5 col-lg-6">
-                    <iframe src="https://snazzymaps.com/build-a-map/preview/embed/30372" style="border:none;" class="map">
-    </iframe>
+                    <div id="drinks"></div>
+                    <div id="drinks-map">
+                    </div>
                 </div>
             </div>
         </div>
@@ -154,9 +153,7 @@
                     <div class="schedule-item">
                         <h2>The Big Day</h2>
                         <div class="event-date">
-                            <img src="images/flourish3.svg" class="separator reflect" />
                             <h1 class="ceremony">Saturday, September 1st</h1>
-                            <img src="images/flourish3.svg" class="separator " />
                         </div>
                         <div class="event-info-container">
                             <div class="event-address">
@@ -187,8 +184,9 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-5 col-lg-6">
-                   <iframe src="https://snazzymaps.com/embed/32664" class="map" style="border:none;"></iframe>
-                    </iframe>
+                    <div id="ceremony"></div>
+                    <div id="ceremony-map">
+                    </div>
                 </div>
             </div>
         </div>
@@ -200,9 +198,7 @@
                     <div class="schedule-item">
                         <h2>Sunday Funday Brunch</h2>
                         <div class="event-date">
-                            <img src="images/flourish2.svg" class="separator reflect" />
                             <h1>Sunday, September 2nd</h1>
-                            <img src="images/flourish2.svg" class="separator " />
                         </div>
                         <div class="event-info-container">
                             <div class="event-address">
@@ -215,16 +211,16 @@
                                     <p>11:00am</p>
                                 </div>
                             </div>
-                            
                         </div>
-                       
                         <p class="more-details">
                             Everyone is invited! Bring your suit for a day of fun in the Malibu sun.
                         </p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-5 col-lg-6">
-                    <iframe src="https://snazzymaps.com/embed/32666" style="border:none;" class="map"></iframe>
+                    <div id="brunch"></div>
+                    <div id="brunch-map">
+                    </div>
                 </div>
             </div>
         </div>
@@ -236,12 +232,27 @@
     <script>
     window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')
     </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script>
-    new WOW().init();
-    $(".mapDiv").click(function() {
-        map.enableScrollWheelZoom();
+    $('#dinner').click(function() {
+        var dinner = '<iframe src="https://snazzymaps.com/build-a-map/preview/embed/30384" class="map" style="border:none;"></iframe>';
+        $('#dinner').hide();
+        $('#dinner-map').html(dinner);
+    });
+    $('#ceremony').click(function() {
+        var ceremony = '<iframe src="https://snazzymaps.com/embed/32664" class="map" style="border:none;"></iframe>;'
+        $('#ceremony').hide();
+        $('#ceremony-map').html(ceremony);
+    });
+    $('#drinks').click(function() {
+        var drinks = ' <iframe src="https://snazzymaps.com/build-a-map/preview/embed/30372" style="border:none;" class="map"></iframe>'
+        $('#drinks').hide();
+        $('#drinks-map').html(drinks);
+    });
+    $('#brunch').click(function() {
+        var brunch = '<iframe src="https://snazzymaps.com/embed/32666" style="border:none;" class="map"></iframe>'
+        $('#brunch').hide();
+        $('#brunch-map').html(brunch);
     });
     </script>
 </body>
