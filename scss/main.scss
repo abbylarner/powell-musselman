@@ -324,7 +324,14 @@ section {
     background: url('../images/ring.jpg') 0 0 no-repeat;
     background-size: cover;
     background-position: 20%;
-    height: 600px; //    background-attachment: fixed;
+    height: 300px; //    background-attachment: fixed;
+
+    @media (min-width: 768px){
+        height: 450px;
+    }
+    @media (min-width: 992px){
+        height: 600px;
+    }
 }
 
 .separator {
