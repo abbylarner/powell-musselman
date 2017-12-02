@@ -326,10 +326,10 @@ section {
     background-position: 20%;
     height: 300px; //    background-attachment: fixed;
 
-    @media (min-width: 768px){
+    @media (min-width: 992px){
         height: 450px;
     }
-    @media (min-width: 992px){
+    @media (min-width: 1199px){
         height: 600px;
     }
 }

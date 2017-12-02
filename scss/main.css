@@ -260,10 +260,10 @@ section {
   background-size: cover;
   background-position: 20%;
   height: 300px; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .fixed-photo {
       height: 450px; } }
-  @media (min-width: 992px) {
+  @media (min-width: 1199px) {
     .fixed-photo {
       height: 600px; } }
 
