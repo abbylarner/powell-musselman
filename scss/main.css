@@ -92,6 +92,18 @@ p {
       .navbar-bg a:hover::before {
         visibility: visible;
         -webkit-transform: scaleX(1);
+        transform: scaleX(1); }
+      .navbar-bg a.active::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        bottom: 0;
+        left: 25%;
+        top: 2rem;
+        visibility: visible;
+        background-color: #384252;
+        -webkit-transform: scaleX(1);
         transform: scaleX(1); } }
 
 .navbar-expand-lg .navbar-collapse {
@@ -134,6 +146,17 @@ p {
 .logo {
   align-self: stretch;
   flex: 1 100%; }
+  .logo a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    letter-spacing: 0;
+    font-weight: 400; }
+    .logo a:hover::before {
+      content: "";
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0); }
 
 section {
   background-color: #fff8f6; }
