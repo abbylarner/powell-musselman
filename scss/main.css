@@ -491,13 +491,13 @@ section {
     .schedule-item .more-details p {
       line-height: 1.1; }
   .schedule-item .event-info-container {
-    width: 60%;
-    margin: 2rem auto 0 auto;
-    overflow: hidden;
-    margin-bottom: 2rem; }
+    margin-top: 2rem;
+    overflow: hidden; }
     @media (min-width: 992px) {
       .schedule-item .event-info-container {
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        width: 60%;
+        margin: 2rem auto 2rem auto; } }
   .schedule-item .event-address {
     width: 60%;
     margin: 0 auto 2rem auto; }

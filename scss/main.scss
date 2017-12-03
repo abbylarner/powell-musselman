@@ -616,12 +616,13 @@ section {
         }
     }
     .event-info-container {
-        width: 60%;
-        margin: 2rem auto 0 auto;
+        
+        margin-top: 2rem;
         overflow: hidden;
-        margin-bottom: 2rem;
         @media (min-width: 992px) {
             margin-bottom: 0;
+            width: 60%;
+            margin: 2rem auto 2rem auto;
         }
     }
 
