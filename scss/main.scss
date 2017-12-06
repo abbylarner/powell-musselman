@@ -49,7 +49,7 @@ h3 {
 p {
     color: $font-color;
     font-size: 20px;
-    line-height: 1.8;
+    line-height: 1.4;
 }
 
 .top-section {}
@@ -214,11 +214,14 @@ section {
 
 .hero-container {
     text-align: center;
-    background: url('../images/hero_final.jpg') 0 0 no-repeat;
+    background: url('../images/hero_long.jpg') 0 0 no-repeat;
     background-size: cover;
     background-position: 20%;
-    height: 30rem;
+    height: 20rem;
     margin-top: 7.6rem;
+     @media (min-width: 768px) {
+        height: 30rem;
+    }
     @media (min-width: 992px) {
         height: 40rem;
     }
@@ -580,27 +583,29 @@ section {
 
         &.ceremony {
             &::before {
-                background: url('../images/flourish3.svg') 0 0 no-repeat;
-                background-size: 50px;
-                display: block;
-                width: 50px;
-                height: 50px;
-                content: "";
-                display: inline-block;
-                margin-bottom: -1rem;
-                margin-right: 0.5rem;
+//                background: url('../images/flourish3.svg') 0 0 no-repeat;
+//                background-size: 50px;
+//                display: block;
+//                width: 50px;
+//                height: 50px;
+//                content: "";
+//                display: inline-block;
+//                margin-bottom: -1rem;
+//                margin-right: 0.5rem;
+                background: none;
             }
 
             &::after {
-                background: url('../images/flourish3_opp.svg') 0 0 no-repeat;
-                background-size: 50px;
-                display: block;
-                width: 50px;
-                height: 50px;
-                content: "";
-                display: inline-block;
-                margin-bottom: -1.15rem;
-                margin-left: 1rem;
+//                background: url('../images/flourish3_opp.svg') 0 0 no-repeat;
+//                background-size: 50px;
+//                display: block;
+//                width: 50px;
+//                height: 50px;
+//                content: "";
+//                display: inline-block;
+//                margin-bottom: -1.15rem;
+//                margin-left: 1rem;
+                 background: none;
             }
         }
     }
@@ -650,10 +655,14 @@ section {
         p {
             line-height: 1.1;
             font-weight: bold;
+            margin-bottom: 0;
         }
         &.single-time {
             width: 100%;
             text-align: center;
+        }
+        .time-spacing {
+            margin-bottom: 2rem;
         }
     }
     .event-info {
@@ -705,10 +714,12 @@ section {
 }
 
 .desc-text {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 4rem;
     span {
         font-weight: bold;
+        margin-top: 1rem;
+        display: block;
     }
 }
 
