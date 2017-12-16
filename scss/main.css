@@ -37,7 +37,7 @@ h3 {
 p {
   color: #384252;
   font-size: 20px;
-  line-height: 1.8; }
+  line-height: 1.4; }
 
 .internal-container {
   margin-top: 7.6rem;
@@ -167,11 +167,14 @@ section {
 
 .hero-container {
   text-align: center;
-  background: url("../images/hero_final.jpg") 0 0 no-repeat;
+  background: url("../images/hero_long.jpg") 0 0 no-repeat;
   background-size: cover;
   background-position: 20%;
-  height: 30rem;
+  height: 20rem;
   margin-top: 7.6rem; }
+  @media (min-width: 768px) {
+    .hero-container {
+      height: 30rem; } }
   @media (min-width: 992px) {
     .hero-container {
       height: 40rem; } }
@@ -465,25 +468,9 @@ section {
       margin-bottom: -1.15rem;
       margin-left: 1rem; }
     .schedule-item h1.ceremony::before {
-      background: url("../images/flourish3.svg") 0 0 no-repeat;
-      background-size: 50px;
-      display: block;
-      width: 50px;
-      height: 50px;
-      content: "";
-      display: inline-block;
-      margin-bottom: -1rem;
-      margin-right: 0.5rem; }
+      background: none; }
     .schedule-item h1.ceremony::after {
-      background: url("../images/flourish3_opp.svg") 0 0 no-repeat;
-      background-size: 50px;
-      display: block;
-      width: 50px;
-      height: 50px;
-      content: "";
-      display: inline-block;
-      margin-bottom: -1.15rem;
-      margin-left: 1rem; }
+      background: none; }
   .schedule-item .more-details {
     margin: 2rem auto 0 auto;
     clear: both;
@@ -515,10 +502,13 @@ section {
     clear: both; }
     .schedule-item .time p {
       line-height: 1.1;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-bottom: 0; }
     .schedule-item .time.single-time {
       width: 100%;
       text-align: center; }
+    .schedule-item .time .time-spacing {
+      margin-bottom: 2rem; }
   .schedule-item .event-info {
     text-align: left;
     float: left;
@@ -539,10 +529,12 @@ section {
       min-height: 588px; } }
 
 .desc-text {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 4rem; }
   .desc-text span {
-    font-weight: bold; }
+    font-weight: bold;
+    margin-top: 1rem;
+    display: block; }
 
 .acc-title {
   background: url("../images/malibu.jpg") 0 0 no-repeat;
