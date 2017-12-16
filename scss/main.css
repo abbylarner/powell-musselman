@@ -13,7 +13,10 @@ section {
 h1 {
   font-family: 'Great Vibes', sans-serif;
   color: #384252;
-  font-size: 2.2rem; }
+  font-size: 1.8rem; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.2rem; } }
   @media (min-width: 992px) {
     h1 {
       font-size: 2.5rem; } }
@@ -350,7 +353,8 @@ section {
   height: 300px;
   margin: 0 10%;
   background: url("../images/dinner_map.png") 0 0 no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-top: 2rem; }
   @media (min-width: 768px) {
     #dinner {
       background-position: -10rem 0;
@@ -366,7 +370,8 @@ section {
   height: 300px;
   margin: 0 10%;
   background: url("../images/ceremony_map.png") 0 0 no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-top: 2rem; }
   @media (min-width: 768px) {
     #ceremony {
       background-position: -10rem 0;
@@ -382,7 +387,8 @@ section {
   height: 300px;
   margin: 0 10%;
   background: url("../images/drinks_map.png") 0 0 no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-top: 2rem; }
   @media (min-width: 768px) {
     #drinks {
       background-position: -10rem 0;
@@ -398,7 +404,8 @@ section {
   height: 300px;
   margin: 0 10%;
   background: url("../images/brunch_map.png") 0 0 no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-top: 2rem; }
   @media (min-width: 768px) {
     #brunch {
       background-position: -10rem 0;
@@ -449,27 +456,56 @@ section {
     margin: 0 0.75rem; }
     .schedule-item h1::before {
       background: url("../images/flourish2_opp.svg") 0 0 no-repeat;
-      background-size: 50px;
+      background-size: 40px;
       display: block;
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       content: "";
       display: inline-block;
       margin-bottom: -1rem;
       margin-right: 0.5rem; }
     .schedule-item h1::after {
       background: url("../images/flourish2.svg") 0 0 no-repeat;
-      background-size: 50px;
+      background-size: 40px;
       display: block;
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       content: "";
       display: inline-block;
       margin-bottom: -1.15rem;
       margin-left: 1rem; }
+    @media (min-width: 768px) {
+      .schedule-item h1::before {
+        background: url("../images/flourish2_opp.svg") 0 0 no-repeat;
+        background-size: 50px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        content: "";
+        display: inline-block;
+        margin-bottom: -1rem;
+        margin-right: 0.5rem; }
+      .schedule-item h1::after {
+        background: url("../images/flourish2.svg") 0 0 no-repeat;
+        background-size: 50px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        content: "";
+        display: inline-block;
+        margin-bottom: -1.15rem;
+        margin-left: 1rem; } }
     .schedule-item h1.ceremony::before {
-      background: none; }
+      width: 0;
+      height: 0;
+      content: "";
+      background: none;
+      margin-top: 50px; }
     .schedule-item h1.ceremony::after {
+      width: 0;
+      height: 50px;
+      content: "";
+      display: inline-block;
       background: none; }
   .schedule-item .more-details {
     margin: 2rem auto 0 auto;
@@ -493,7 +529,9 @@ section {
       line-height: 1.1; }
   .schedule-item .event-info-wrapper {
     width: 60%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 12rem; }
   .schedule-item .time {
     text-align: left;
     float: left;
@@ -507,8 +545,6 @@ section {
     .schedule-item .time.single-time {
       width: 100%;
       text-align: center; }
-    .schedule-item .time .time-spacing {
-      margin-bottom: 2rem; }
   .schedule-item .event-info {
     text-align: left;
     float: left;
