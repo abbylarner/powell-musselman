@@ -439,6 +439,22 @@ section {
     margin-bottom: 2rem;
 }
 
+//Registry
+#registry {
+    background: lighten($primary-color, 10%);
+
+    .row {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+}
+
 //Schedule
 #dinner {
     width: 80%;
@@ -515,7 +531,9 @@ section {
         background-position: 0 0;
     }
 }
-
+.wedding-party-only {
+    color: darken($primary-color, 10%);
+}
 .top-section {
     margin-top: 7.5rem;
 }
@@ -655,6 +673,10 @@ section {
             margin-bottom: 0;
             width: 60%;
             margin: 2rem auto 2rem auto;
+        }
+
+        &.ceremony-info {
+            margin-bottom: 0;
         }
     }
 
