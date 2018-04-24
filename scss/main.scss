@@ -455,6 +455,8 @@ section {
 
 }
 
+
+
 //Schedule
 #dinner {
     width: 80%;
@@ -769,6 +771,12 @@ section {
         margin-top: 1rem;
         display: block;
     }
+
+    &.shuttle-info {
+    span {
+        margin-top: 0;
+    }
+}
 }
 
 .acc-title {

@@ -585,6 +585,8 @@ section {
     font-weight: bold;
     margin-top: 1rem;
     display: block; }
+  .desc-text.shuttle-info span {
+    margin-top: 0; }
 
 .acc-title {
   background: url("../images/malibu.jpg") 0 0 no-repeat;
