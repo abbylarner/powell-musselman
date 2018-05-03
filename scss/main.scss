@@ -562,7 +562,7 @@ section {
     &:nth-child(4) {
         background: $font-color url('../images/corner.png');
         background-size: 350px;
-        .schedule-item {
+        .schedule-item{
             h1,
             h2,
             p {
@@ -576,6 +576,7 @@ section {
                     transform: rotate(-30deg);
                 }
             }
+
         }
     }
 }
@@ -682,13 +683,17 @@ section {
         }
     }
 
-    .event-address {
+    .event-address, .transportation-address {
         width: 60%;
         margin: 0 auto 2rem auto;
         p {
             margin-bottom: 0;
             line-height: 1.1;
         }
+    }
+
+    .transportation-address {
+        width: 100%;
     }
 
     .event-info-wrapper {
@@ -726,6 +731,13 @@ section {
             line-height: 1.1;
         }
     }
+
+     &.trans-item {
+                margin-top: 4rem;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
 }
 
 //Accomodations
