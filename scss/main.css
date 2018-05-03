@@ -535,12 +535,14 @@ section {
         margin: 2rem auto 2rem auto; } }
     .schedule-item .event-info-container.ceremony-info {
       margin-bottom: 0; }
-  .schedule-item .event-address {
+  .schedule-item .event-address, .schedule-item .transportation-address {
     width: 60%;
     margin: 0 auto 2rem auto; }
-    .schedule-item .event-address p {
+    .schedule-item .event-address p, .schedule-item .transportation-address p {
       margin-bottom: 0;
       line-height: 1.1; }
+  .schedule-item .transportation-address {
+    width: 100%; }
   .schedule-item .event-info-wrapper {
     width: 60%;
     margin: 0 auto;
@@ -566,6 +568,10 @@ section {
     .schedule-item .event-info p {
       margin-bottom: 0;
       line-height: 1.1; }
+  .schedule-item.trans-item {
+    margin-top: 4rem; }
+    .schedule-item.trans-item:first-child {
+      margin-top: 0; }
 
 .acc-container {
   text-align: center; }
