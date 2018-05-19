@@ -42,6 +42,9 @@ p {
   font-size: 20px;
   line-height: 1.4; }
 
+.social {
+  text-align: center; }
+
 .internal-container {
   margin-top: 7.6rem;
   padding: 8rem 0;
@@ -125,6 +128,10 @@ p {
   .navbar-expand-lg .navbar-collapse .nav-link {
     padding-left: 1rem;
     padding-right: 1rem; }
+    @media (min-width: 992px) and (max-width: 1157px) {
+      .navbar-expand-lg .navbar-collapse .nav-link {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem; } }
 
 .navbar-toggler {
   display: inline-block;
@@ -134,6 +141,9 @@ p {
   .navbar-toggler h2 {
     margin-bottom: 0;
     margin-top: 2px; }
+
+.navbar-button {
+  width: 100%; }
 
 .bullet {
   color: #384252;
@@ -168,7 +178,7 @@ p {
 section {
   background-color: #fff8f6; }
 
-.hero-container {
+.hero-container, .wedding-hero-container {
   text-align: center;
   background: url("../images/hero_long.jpg") 0 0 no-repeat;
   background-size: cover;
@@ -176,15 +186,25 @@ section {
   height: 20rem;
   margin-top: 7.6rem; }
   @media (min-width: 768px) {
-    .hero-container {
+    .hero-container, .wedding-hero-container {
       height: 30rem; } }
   @media (min-width: 992px) {
-    .hero-container {
+    .hero-container, .wedding-hero-container {
       height: 40rem; } }
+
+.wedding-hero-container {
+  background: url("../images/wedding-party-hero.jpg") 0 0 no-repeat;
+  background-size: cover;
+  background-position: 40% 50%; }
+  @media (min-width: 1199px) {
+    .wedding-hero-container {
+      background-position: 50% 50%; } }
 
 .date {
   background: #fff8f6;
   padding: 14rem 0; }
+  .date a img {
+    width: 32px; }
 
 .about {
   text-align: center;
@@ -578,12 +598,20 @@ section {
   text-align: center; }
   .acc-container .story-title h1 {
     margin-top: -2rem; }
+  .acc-container .acc-info.short {
+    min-height: 458px; }
   @media (min-width: 768px) {
     .acc-container .row:nth-child(3) .acc-info {
-      min-height: 720px; } }
+      min-height: 720px; }
+      .acc-container .row:nth-child(3) .acc-info.short {
+        min-height: 458px; } }
   @media (min-width: 992px) {
     .acc-container .row:nth-child(3) .acc-info {
-      min-height: 588px; } }
+      min-height: 588px; }
+      .acc-container .row:nth-child(3) .acc-info.short {
+        min-height: 0; } }
+  .acc-container.malibu {
+    padding-top: 0; }
 
 .desc-text {
   margin-top: 1rem;
@@ -617,6 +645,48 @@ section {
       background-image: url("../images/country.jpg"); }
     .acc-info .acc-img.airbnb {
       background-image: url("../images/airbnb.jpg"); }
+    .acc-info .acc-img.pier {
+      background-image: url("../images/pier.jpg"); }
+    .acc-info .acc-img.sugarfish {
+      background-image: url("../images/sugarfish.jpg"); }
+    .acc-info .acc-img.cabo {
+      background-image: url("../images/cabo.jpg"); }
+    .acc-info .acc-img.misfits {
+      background-image: url("../images/misfits.jpg"); }
+    .acc-info .acc-img.rosenthal {
+      background-image: url("../images/rosenthal.jpg"); }
+    .acc-info .acc-img.third {
+      background-image: url("../images/third.jpg"); }
+    .acc-info .acc-img.flying {
+      background-image: url("../images/flying.jpg"); }
+    .acc-info .acc-img.hiking {
+      background-image: url("../images/hiking.jpg"); }
+    .acc-info .acc-img.farm {
+      background-image: url("../images/farm.jpg"); }
+    .acc-info .acc-img.sunset {
+      background-image: url("../images/sunset.jpg"); }
+    .acc-info .acc-img.nobu {
+      background-image: url("../images/nobu.jpg"); }
+    .acc-info .acc-img.bui {
+      background-image: url("../images/bui.jpg"); }
+    .acc-info .acc-img.thai {
+      background-image: url("../images/thai.jpg"); }
+    .acc-info .acc-img.malibu-wines {
+      background-image: url("../images/malibu-wines.jpg"); }
+    .acc-info .acc-img.backbone {
+      background-image: url("../images/backbone.jpg"); }
+    .acc-info .acc-img.solstice {
+      background-image: url("../images/solstice.jpg"); }
+    .acc-info .acc-img.vintage {
+      background-image: url("../images/vintage.jpg"); }
+    .acc-info .acc-img.johns {
+      background-image: url("../images/johns.jpg"); }
+    .acc-info .acc-img.tra {
+      background-image: url("../images/tra.jpg"); }
+    .acc-info .acc-img.sunlife {
+      background-image: url("../images/sun.jpg"); }
+    .acc-info .acc-img.lilys {
+      background-image: url("../images/lilys.jpg"); }
   .acc-info p {
     line-height: 1; }
   .acc-info .icon-border {
@@ -660,5 +730,107 @@ section {
     @media (min-width: 992px) {
       .acc-info .airbnb-text a {
         margin-top: 3.1rem; } }
+
+.party-container {
+  text-align: center; }
+  .party-container img {
+    width: 100%;
+    margin: 3rem 0 1.5rem 0;
+    border-radius: 10px;
+    max-width: 300px; }
+
+.party-title {
+  text-align: center;
+  width: 100%; }
+
+.party-desc {
+  margin-top: 0.5rem;
+  display: block; }
+
+.party-time {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 0.5rem;
+  font-style: italic; }
+
+.grid-container h1 {
+  text-align: center;
+  display: block;
+  width: 100%; }
+
+.masonry, .masonry-grid {
+  /* Masonry container */
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+  padding: 0;
+  -moz-column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  column-gap: 1.5em;
+  font-size: .85em;
+  margin-top: 3rem; }
+
+.item {
+  display: inline-block;
+  margin: 0 0 1.5em;
+  width: 100%;
+  -webkit-transition: 1s ease all;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.item img {
+  width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  .masonry {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    margin: 3rem 1.5rem 0 1.5rem; }
+
+  .masonry-grid {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    margin: 3rem 1.5rem 0 1.5rem; } }
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .masonry {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    margin: 3rem 0 0 0; }
+
+  .masonry-grid {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    margin: 3rem 0 0 0; } }
+@media only screen and (min-width: 1201px) {
+  .masonry {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2; }
+
+  .masonry-grid {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3; } }
+.gallery-top {
+  margin-top: 8rem; }
+
+.years-container img {
+  width: 100%; }
+.years-container p {
+  text-align: center;
+  font-family: 'Scheherazade', serif; }
+.years-container h1 {
+  margin-bottom: 3rem; }
+
+.things-top h1 {
+  margin-bottom: 2rem; }
 
 /*# sourceMappingURL=main.css.map */

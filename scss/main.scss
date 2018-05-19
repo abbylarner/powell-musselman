@@ -54,6 +54,15 @@ p {
     line-height: 1.4;
 }
 
+.social {
+    text-align: center;
+}
+
+
+.social-container {
+
+}
+
 .top-section {}
 
 .internal-container {
@@ -154,6 +163,11 @@ p {
     .nav-link {
         padding-left: 1rem;
         padding-right: 1rem;
+
+        @media (min-width: 992px) and (max-width: 1157px){
+            padding-left: 0.4rem;
+            padding-right: 0.4rem;
+        }
     }
 }
 
@@ -166,6 +180,10 @@ p {
         margin-bottom: 0;
         margin-top: 2px;
     }
+}
+
+.navbar-button {
+    width: 100%;
 }
 
 
@@ -214,7 +232,7 @@ section {
     background-color: $light-color;
 }
 
-.hero-container {
+.hero-container, .wedding-hero-container {
     text-align: center;
     background: url('../images/hero_long.jpg') 0 0 no-repeat;
     background-size: cover;
@@ -229,9 +247,23 @@ section {
     }
 }
 
+.wedding-hero-container {
+    background: url('../images/wedding-party-hero.jpg') 0 0 no-repeat;
+    background-size: cover;
+    background-position: 40% 50%;
+     @media (min-width: 1199px) {
+        background-position: 50% 50%;
+    }
+
+}
+
 .date {
     background: $light-color;
     padding: 14rem 0;
+
+    a img {
+        width: 32px;
+    }
 }
 
 .about {
@@ -760,10 +792,20 @@ section {
         //     z-index: -1;
         // }
     }
+    .acc-info {
+        &.short {
+            min-height: 458px;
+        }
+    }
     @media(min-width: 768px) {
+        
         .row:nth-child(3) {
             .acc-info {
                 min-height: 720px;
+
+                &.short {
+                    min-height: 458px;
+                }
             }
         }
     }
@@ -771,9 +813,15 @@ section {
         .row:nth-child(3) {
             .acc-info {
                 min-height: 588px;
+                 &.short {
+                    min-height: 0;
+                }
             }
         }
     }
+    &.malibu {
+    padding-top: 0;
+}
 }
 
 .desc-text {
@@ -798,6 +846,7 @@ section {
     background-position: 10%;
 }
 
+
 .acc-info {
     text-align: center;
     margin-bottom: 4rem;
@@ -820,6 +869,70 @@ section {
         }
         &.airbnb {
             background-image: url('../images/airbnb.jpg');
+        }
+        &.pier {
+            background-image: url('../images/pier.jpg');
+        }
+        &.sugarfish {
+            background-image: url('../images/sugarfish.jpg');
+        }
+        &.cabo {
+            background-image: url('../images/cabo.jpg');
+        }
+        &.misfits {
+            background-image: url('../images/misfits.jpg');
+        }
+        &.rosenthal {
+            background-image: url('../images/rosenthal.jpg');
+        }
+         &.third {
+            background-image: url('../images/third.jpg');
+        }
+         &.flying {
+            background-image: url('../images/flying.jpg');
+        }
+
+         &.hiking {
+            background-image: url('../images/hiking.jpg');
+        }
+        &.farm {
+            background-image: url('../images/farm.jpg');
+        }
+        &.sunset {
+            background-image: url('../images/sunset.jpg');
+        }
+        &.nobu {
+            background-image: url('../images/nobu.jpg');
+        }
+        &.bui {
+            background-image: url('../images/bui.jpg');
+        }
+        &.thai {
+            background-image: url('../images/thai.jpg');
+        }
+        &.malibu-wines {
+            background-image: url('../images/malibu-wines.jpg');
+        }
+        &.backbone {
+            background-image: url('../images/backbone.jpg');
+        }
+        &.solstice {
+            background-image: url('../images/solstice.jpg');
+        }
+         &.vintage {
+            background-image: url('../images/vintage.jpg');
+        }
+         &.johns {
+            background-image: url('../images/johns.jpg');
+        }
+        &.tra {
+            background-image: url('../images/tra.jpg');
+        }
+        &.sunlife {
+            background-image: url('../images/sun.jpg');
+        }
+        &.lilys {
+            background-image: url('../images/lilys.jpg');
         }
         background-size: cover;
     }
@@ -884,3 +997,131 @@ section {
         }
     }
 }
+
+//Wedding Party
+.party-container {
+    img {
+        width: 100%;
+        margin: 3rem 0 1.5rem 0;
+        border-radius: 10px;
+        max-width: 300px;
+    }
+    text-align: center;
+}
+.party-title {
+    text-align: center;
+    width: 100%;
+}
+
+.party-desc {
+    margin-top: 0.5rem;
+    display: block;
+}
+
+.party-time {
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    padding-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.grid-container {
+    h1 {text-align: center;
+        display: block;
+        width: 100%}
+}
+.masonry, .masonry-grid { /* Masonry container */
+    -webkit-column-count: 4;
+  -moz-column-count:4;
+  column-count: 4;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+    margin-top: 3rem;
+}
+.item {
+    display: inline-block;
+    margin: 0 0 1.5em;
+    width: 100%;
+    -webkit-transition:1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.item img{width:100%;}
+
+@media only screen and (max-width: 768px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+        margin: 3rem 1.5rem 0 1.5rem;
+    }
+    .masonry-grid {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        margin: 3rem 1.5rem 0 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        margin: 3rem 0 0 0;
+    }
+    .masonry-grid {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        margin: 3rem 0 0 0;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+    .masonry-grid {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+//Gallery
+.gallery-top {
+    margin-top: 8rem;
+}
+
+.years-container {
+    img {
+        width: 100%;
+
+    }
+    p{
+        text-align: center;
+        font-family: 'Scheherazade', serif;
+
+    }
+
+    h1 {
+        margin-bottom: 3rem;
+    }
+}
+
+//Things to do
+.things-top {
+    h1 {
+        margin-bottom: 2rem;
+    }
+}
+
