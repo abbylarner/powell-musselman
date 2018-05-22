@@ -178,7 +178,7 @@ p {
 section {
   background-color: #fff8f6; }
 
-.hero-container, .wedding-hero-container {
+.hero-container {
   text-align: center;
   background: url("../images/hero_long.jpg") 0 0 no-repeat;
   background-size: cover;
@@ -186,19 +186,56 @@ section {
   height: 20rem;
   margin-top: 7.6rem; }
   @media (min-width: 768px) {
-    .hero-container, .wedding-hero-container {
+    .hero-container {
       height: 30rem; } }
   @media (min-width: 992px) {
-    .hero-container, .wedding-hero-container {
+    .hero-container {
       height: 40rem; } }
 
 .wedding-hero-container {
-  background: url("../images/wedding-party-hero.jpg") 0 0 no-repeat;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.wedding-hero-container-left {
+  background: url("../images/bachelors.jpg") 0 0 no-repeat;
   background-size: cover;
-  background-position: 40% 50%; }
+  background-position: 40% 50%;
+  margin-top: 7.65rem;
+  height: 30rem;
+  width: 50%;
+  float: left; }
+  @media (min-width: 768px) {
+    .wedding-hero-container-left {
+      height: 15rem; } }
+  @media (min-width: 992px) {
+    .wedding-hero-container-left {
+      height: 25rem;
+      max-width: 600px; } }
   @media (min-width: 1199px) {
-    .wedding-hero-container {
+    .wedding-hero-container-left {
       background-position: 50% 50%; } }
+
+.wedding-hero-container-right {
+  background: url("../images/bridesmaids.jpg") 0 0 no-repeat;
+  background-size: cover;
+  background-position: 40% 50%;
+  width: 50%;
+  float: left;
+  margin-top: 7.65rem;
+  height: 30rem; }
+  @media (min-width: 768px) {
+    .wedding-hero-container-right {
+      height: 15rem; } }
+  @media (min-width: 992px) {
+    .wedding-hero-container-right {
+      height: 25rem;
+      max-width: 600px; } }
+  @media (min-width: 1199px) {
+    .wedding-hero-container-right {
+      background-position: 50% 50%; } }
+
+.wedding-top {
+  clear: both; }
 
 .date {
   background: #fff8f6;
